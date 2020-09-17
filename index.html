@@ -1,58 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Project</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="hero">
-        <div class="form-box">
-            <div class="button-box">
-                    <div id="btn"></div>
-                    <button type="button" class="toggle-btn" onclick="login()">Log in</button>
-                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
-            </div>
-            <br>
-            <div class="social-icons">
-                <img src="facebook.jpg" alt="img">
-                <img src="tweet.png" alt="img">
-                <img src="instagram.png" alt="img">
-            </div>
-            <form  id="login"  class="input-group">
-                <input style="text-transform: capitalize;" type="text" class="input-field" placeholder="User ID" required>
-                <input type="password" class="input-field" placeholder="Enter password" required>
-                <input type="checkbox" class="check-box" > <span>Remember My Password</span>
-                <button type="submit"   class="submit-btn">Log in</button>
-            </form>
-            <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="User ID" required>
-                <input type="email" class="input-field" placeholder="Email" required>
-                <input type="password" class="input-field" placeholder="Enter password" required>
-                <input type="checkbox" class="check-box" > <span>I agree to the terms and conditions</span>
-                <button type="submit"   class="submit-btn">Register</button>
-            </form>
-            
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Log in
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
         </div>
-        <footer>
-            <p>This for for is designed by Mr Trawally</p>
-        </footer>
+        <br />
+        <div class="social-icons">
+          <img src="facebook.jpg" alt="img" />
+          <img src="tweet.png" alt="img" />
+          <img src="instagram.png" alt="img" />
+        </div>
+        <form id="login" class="input-group">
+          <input
+            style="text-transform: capitalize"
+            type="text"
+            class="input-field"
+            placeholder="User ID"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter password"
+            required
+          />
+          <input type="checkbox" class="check-box" />
+          <span>Remember My Password</span>
+          <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="register" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User ID"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter password"
+            required
+          />
+          <input type="checkbox" class="check-box" />
+          <span>I agree to the terms and conditions</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+      <footer>
+        <p>This form is designed by Mr Trawally</p>
+      </footer>
     </div>
     <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("register");
-        var z = document.getElementById("btn");
-        function register(){
-            x.style.left="-400px";
-            y.style.left="50px";
-            z.style.left="110px";
-        }
-        function login(){
-            x.style.left="50px";
-            y.style.left="450px";
-            z.style.left="0";
-        } 
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+      }
     </script>
-</body>
+  </body>
 </html>
